@@ -1,0 +1,47 @@
+.container {
+  margin: 20%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border:solid 2px black;
+  background-color: rgb(59, 62, 67);
+}
+
+.gray-bg {
+  background-color:rgb(59, 62, 67);
+}
+
+.nav-menu a {
+  margin: 0 10px;
+  padding: 1%;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-menu a:hover {
+  background-color: #5effbc;
+  color:#000
+}
+
+
+/* Works for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Works for Firefox */
+/* input[type="number"] {
+  -moz-appearance: textfield;
+} */
+
+
+/* essentially hiding the spin buttons (up and down arrows) that appear by default in number input fields in WebKit-based browsers. */
