@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 3500
 const cors = require('cors')                               //cross origin resource sharing for accessing resource from another domain.
 // app.use(cors({origin:'http://localhost:5173'}))
 app.use(cors())
-app.use(express.json())
-const blogRouter = require('./router/blogRouter')
+app.use(express.json()) //to parse incoming json payloads even when req payload is json or not.
+const blogRouter = require('./router/blogRouter') //to parse incoming url req payloads
 
 mongoose.connect(process.env.DB_URL)
 const db = mongoose.connection
